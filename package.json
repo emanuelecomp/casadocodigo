@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "set NODE_ENV=test node node_modules/mocha/bin/mocha",
+    "test": "mocha"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +16,9 @@
     "express-load": "^1.1.16",
     "express-validator": "^4.3.0",
     "mysql": "^2.15.0"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "supertest": "^3.0.0"
   }
 }
